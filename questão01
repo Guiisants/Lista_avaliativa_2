@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+int main(){
+int coj[10];
+    
+    for   ( int i = 0; i < 10; i++ ){
+            scanf( "%d", &coj[i] );
+    
+    }
+    
+    for  ( int i = 0; i < 10; i++ ){
+        
+        
+        if ( i > 0 ){
+            printf (" " );
+        }
+            printf ("%d", coj[i] );
+    }
+            printf ( "\n" );
+    
+            int tamdocoj = 10;
+    
+     while   ( tamdocoj > 1 ){
+        
+       
+       // Aqui eu coloquei o novo conjuntoo //
+    
+    
+    for ( int i = 0; i < tamdocoj - 1; i++ ){
+               coj [i] = coj[i] + coj[i + 1] ;
+    }
+            
+            tamdocoj-- ;
+        
+    
+    for   ( int i = 0; i < tamdocoj; i++ ){
+            printf  ( "%d", coj[i] );
+            if ( i < tamdocoj - 1 ){
+            printf  (" ");
+        }
+       
+        }
+            printf ("\n");
+    }
+    
+    return 0;
+}
